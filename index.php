@@ -28,7 +28,7 @@ Eseguire poi degli output istanziando oggetti delle varie classi. -->
         <?php //ISTANCE TEEN
         $teen1 = new Teen('Laura','Benedetta','15');
         ?>
-    <div>discount for <?php echo $teen1->name?> : <?php echo $teen1->getSale();?></div>
+    <div>Congrats <?php echo $teen1->name?> you are granted a <?php echo $teen1->getSale();?> % sale</div>
     </section>
 </main>
 </body>
