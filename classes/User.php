@@ -1,5 +1,5 @@
 <?php
-//CLASS PRODUCT FATHER
+//CLASS USER FATHER
 class User{
    //PROPERTY
     public $name;
@@ -21,7 +21,7 @@ class Teen extends User{
 //CONSTRUCTOR
     public function __construct($name, $surname, $age){
         //FATHER CALL
-        parent::__construct($name,$surname,$age);
+        parent::__construct($name,$surname);
         //CHILD PARAMETER
        $this->age = $age;
     }

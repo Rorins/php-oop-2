@@ -1,7 +1,9 @@
 <?php
 require_once __DIR__. '/classes/User.php';
 ?>
-
+<?php
+require_once __DIR__. '/classes/Product.php';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +30,13 @@ Eseguire poi degli output istanziando oggetti delle varie classi. -->
         <?php //ISTANCE TEEN
         $teen1 = new Teen('Laura','Benedetta','15');
         ?>
-    <div>Congrats <?php echo $teen1->name?> you are granted a <?php echo $teen1->getSale();?> % sale</div>
+    <div><?php echo $teen1->name?> you are granted a <?php echo $teen1->getSale();?> % sale</div>
+    </section>
+    <section>
+        <?php //ISTANCE CLOTHES
+        $product1 = new Clothes('pants',12,25,'cotton');
+        ?>
+    <div>you have <?php echo $product1->quantity?><?php echo $product1->name?>  in your cart </div>
     </section>
 </main>
 </body>
