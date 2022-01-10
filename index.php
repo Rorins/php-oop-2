@@ -1,3 +1,8 @@
+<?php
+require_once __DIR__. '/classes/User.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,21 +16,20 @@
 Strutturare le classi gestendo l’ereditarietà dove necessario; ad esempio ci potrebbero essere degli utenti premium che hanno diritto a degli sconti esclusivi, oppure diverse tipologie di prodotti.
 Eseguire poi degli output istanziando oggetti delle varie classi. -->
 
-<?php
-//CLASS PRODUCT
-class Product{
-   //PROPERTY
-    public $name;
-    public $type;
-    public $price;
-//CONSTRUCTOR
-    function __construct($name, $type, $price){
-        $this->name = $name; 
-        $this->type = $type;
-        $this->type = $price;
-    }
-//METHODS
-}
-?>
+<header>My Shop</header>
+
+<main>
+    <section>
+        <?php //ISTANCE USER
+        $user1 = new User('Aurora','Grippaudo');
+        ?>
+    </section>
+    <section>
+        <?php //ISTANCE TEEN
+        $teen1 = new Teen('Laura','Benedetta','15');
+        ?>
+    <div>discount: <?php echo $teen1->getSale();?></div>
+    </section>
+</main>
 </body>
 </html>
